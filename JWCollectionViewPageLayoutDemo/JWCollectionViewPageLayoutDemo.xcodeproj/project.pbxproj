@@ -13,9 +13,9 @@
 		A6988D5C20049C590005DB6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6988D5B20049C590005DB6F /* Assets.xcassets */; };
 		A6988D5F20049C590005DB6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6988D5D20049C590005DB6F /* LaunchScreen.storyboard */; };
 		A6988D6220049C590005DB6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6988D6120049C590005DB6F /* main.m */; };
-		A6988D6B20049CA30005DB6F /* JWCollectionViewPageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A6988D6A20049CA30005DB6F /* JWCollectionViewPageLayout.m */; };
 		A6988D912005999E0005DB6F /* JWTestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6988D8F2005999E0005DB6F /* JWTestCollectionViewCell.m */; };
 		A6988D922005999E0005DB6F /* JWTestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6988D902005999E0005DB6F /* JWTestCollectionViewCell.xib */; };
+		A6988D962005A2C10005DB6F /* JWCollectionViewPageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A6988D942005A2C10005DB6F /* JWCollectionViewPageLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +29,11 @@
 		A6988D5E20049C590005DB6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6988D6020049C590005DB6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6988D6120049C590005DB6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A6988D6920049CA30005DB6F /* JWCollectionViewPageLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWCollectionViewPageLayout.h; sourceTree = "<group>"; };
-		A6988D6A20049CA30005DB6F /* JWCollectionViewPageLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWCollectionViewPageLayout.m; sourceTree = "<group>"; };
 		A6988D8E2005999E0005DB6F /* JWTestCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWTestCollectionViewCell.h; sourceTree = "<group>"; };
 		A6988D8F2005999E0005DB6F /* JWTestCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWTestCollectionViewCell.m; sourceTree = "<group>"; };
 		A6988D902005999E0005DB6F /* JWTestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JWTestCollectionViewCell.xib; sourceTree = "<group>"; };
+		A6988D942005A2C10005DB6F /* JWCollectionViewPageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWCollectionViewPageLayout.m; sourceTree = "<group>"; };
+		A6988D952005A2C10005DB6F /* JWCollectionViewPageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWCollectionViewPageLayout.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 		A6988D5120049C580005DB6F /* JWCollectionViewPageLayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A6988D6820049C8B0005DB6F /* JWCollectionViewPageLayout */,
+				A6988D932005A2C10005DB6F /* JWCollectionViewPageLayout */,
 				A6988D5220049C590005DB6F /* AppDelegate.h */,
 				A6988D5320049C590005DB6F /* AppDelegate.m */,
 				A6988D5520049C590005DB6F /* ViewController.h */,
@@ -83,14 +83,15 @@
 			path = JWCollectionViewPageLayoutDemo;
 			sourceTree = "<group>";
 		};
-		A6988D6820049C8B0005DB6F /* JWCollectionViewPageLayout */ = {
+		A6988D932005A2C10005DB6F /* JWCollectionViewPageLayout */ = {
 			isa = PBXGroup;
 			children = (
-				A6988D6920049CA30005DB6F /* JWCollectionViewPageLayout.h */,
-				A6988D6A20049CA30005DB6F /* JWCollectionViewPageLayout.m */,
+				A6988D942005A2C10005DB6F /* JWCollectionViewPageLayout.m */,
+				A6988D952005A2C10005DB6F /* JWCollectionViewPageLayout.h */,
 			);
-			path = JWCollectionViewPageLayout;
-			sourceTree = SOURCE_ROOT;
+			name = JWCollectionViewPageLayout;
+			path = ../../JWCollectionViewPageLayout;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -166,7 +167,7 @@
 			files = (
 				A6988D5720049C590005DB6F /* ViewController.m in Sources */,
 				A6988D6220049C590005DB6F /* main.m in Sources */,
-				A6988D6B20049CA30005DB6F /* JWCollectionViewPageLayout.m in Sources */,
+				A6988D962005A2C10005DB6F /* JWCollectionViewPageLayout.m in Sources */,
 				A6988D5420049C590005DB6F /* AppDelegate.m in Sources */,
 				A6988D912005999E0005DB6F /* JWTestCollectionViewCell.m in Sources */,
 			);
