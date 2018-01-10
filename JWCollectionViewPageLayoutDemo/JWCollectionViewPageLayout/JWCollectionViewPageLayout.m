@@ -80,14 +80,14 @@
         
         if (_horizantalDelegate && [_horizantalDelegate respondsToSelector:@selector(jw_collectionView:layout:sizeForItemAtSection:)]) {
             sectionInfo.itemSize = [_horizantalDelegate jw_collectionView:self.collectionView layout:self sizeForItemAtSection:section];
-            if ([_horizantalDelegate respondsToSelector:@selector(collectionView:layout:insetForSectionAtIndex:)]) {
+            if ([_horizantalDelegate respondsToSelector:@selector(jw_collectionView:layout:insetForSectionAtIndex:)]) {
                 sectionInfo.insets = [_horizantalDelegate jw_collectionView:self.collectionView layout:self insetForSectionAtIndex:section];
             }
-            if ([_horizantalDelegate respondsToSelector:@selector(collectionView:layout:minimumLineSpacingForSectionAtIndex:)]) {
+            if ([_horizantalDelegate respondsToSelector:@selector(jw_collectionView:layout:minimumLineSpacingForSectionAtIndex:)]) {
                 sectionInfo.minimumLineSpacing = [_horizantalDelegate jw_collectionView:self.collectionView layout:self minimumLineSpacingForSectionAtIndex:section];
             }
-            if ([_horizantalDelegate respondsToSelector:@selector(collectionView:layout:minimumInteritemSpacingForSectionAtIndex:)]) {
-                sectionInfo.minimunInteritemSpacing = [_horizantalDelegate jw_collectionView:self.collectionView layout:self minimumLineSpacingForSectionAtIndex:section];
+            if ([_horizantalDelegate respondsToSelector:@selector(jw_collectionView:layout:minimumInteritemSpacingForSectionAtIndex:)]) {
+                sectionInfo.minimunInteritemSpacing = [_horizantalDelegate jw_collectionView:self.collectionView layout:self minimumInteritemSpacingForSectionAtIndex:section];
             }
         }
         sectionInfo.numberOfColumn = (_collectionViewSize.width - sectionInfo.insets.left - sectionInfo.insets.right + sectionInfo.minimunInteritemSpacing) / (sectionInfo.itemSize.width + sectionInfo.minimunInteritemSpacing);
